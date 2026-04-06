@@ -11,4 +11,14 @@ public class Controller {
         return "Hello";
     }
 
+    @GetMapping("/admin/hello")
+    public String getAdminHello() {
+        return "Hello, Admin!!";
+    }
+
+    @GetMapping("/user/hello")
+    public String getUserHello() {
+        return "Hello, User!!";
+    }
+
 }
